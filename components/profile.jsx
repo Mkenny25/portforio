@@ -1,6 +1,7 @@
 import styles from "../styles/profile.module.css";
 import Image from "next/image";
 import Snslink from "./snslink";
+import profilePic from '../public/images/portfolioimg.png'
 // import Skills from "./skills"
 
 export default function Profile() {
@@ -8,7 +9,20 @@ export default function Profile() {
         <div className={styles.profile}>
             <div className={styles.leftSection}>
                 <div className={styles.image}>
-                    <Image src="/sample-image.png" alt="Profileimg" width={200} height={200} />
+                    <>
+                        <Image 
+                            className="profile"
+                            src={profilePic} 
+                            alt="Profileimg" 
+                            width={200} 
+                            height={200} 
+                        />
+                        <style jsx global>{`
+                            .profile {
+                                border-radius: 50%;
+                            }
+                        `}</style>
+                    </>
                 </div>
                 {/* <Snslink /> */}
 
