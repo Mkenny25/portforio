@@ -1,0 +1,14 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 3rem;
+  background: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  --tw-bg-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
