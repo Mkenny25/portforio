@@ -1,18 +1,16 @@
 .profile {
-    /* padding: 4rem; */
+    padding-top: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 1.2rem;
 }
 
-.image {
-    margin: 2rem;
-}
 
 .leftSection {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
     /* justify-content: center; */
     /* align-items: center; */
     /* background-color: white; */

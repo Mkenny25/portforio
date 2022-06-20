@@ -1,5 +1,5 @@
 import Profile from '../components/profile'
-import Works from '../components/works'
+import History from '../components/history'
 
 export default function MyApp() {
   return (
@@ -7,7 +7,7 @@ export default function MyApp() {
       <div>
         <main>
           <Profile />
-          <Works />
+          <History />
         </main>
       </div>
     </>
