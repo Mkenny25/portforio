@@ -1,3 +1,4 @@
+import styles from '../styles/snslink.module.css'
 import { 
   SiGithub,
   SiTwitter 

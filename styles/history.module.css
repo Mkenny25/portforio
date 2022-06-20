@@ -1,4 +1,5 @@
 .timeline {
+<<<<<<< Updated upstream
   position: relative;
   width: 100%;
   max-width: 1140px;
@@ -15,10 +16,29 @@
   bottom: 0;
   left: 50%;
   margin-left: -1px;
+=======
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 4rem 0;
+    padding: 10px 0;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: gray;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+>>>>>>> Stashed changes
 }
 
 /* タイムライン左側表示コンテンツ */
 .containerLeft {
+<<<<<<< Updated upstream
   padding: 15px 30px;
   position: relative;
   background: inherit;
@@ -69,10 +89,63 @@
   background: #e2ebf7;
   position: relative;
   /* border-radius: 0 500px 500px 0; */
+=======
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+    left: 0;
+}
+
+.containerLeft::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -9.5px;
+    background: #ffffff;
+    border: 2px solid gray;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.containerLeft::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: gray;
+    z-index: 1;
+}
+
+.dateLeft {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    right: -75px;
+} 
+
+.contentLeft {
+    padding: 30px 90px 30px 30px;
+    background: #e2ebf7;
+    position: relative;
+    /* border-radius: 0 500px 500px 0; */
+>>>>>>> Stashed changes
 }
 
 /* タイムライン右側表示コンテンツ */
 .containerRight {
+<<<<<<< Updated upstream
   padding: 15px 30px;
   position: relative;
   background: inherit;
@@ -92,10 +165,32 @@
   border-radius: 16px;
   z-index: 1;
   left: -10px;
+=======
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+    left: 50%;
+}
+
+.containerRight::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid gray;
+    border-radius: 16px;
+    z-index: 1;
+    left: -10px;
+>>>>>>> Stashed changes
 }
 
 
 .containerRight::before {
+<<<<<<< Updated upstream
   content: '';
   position: absolute;
   width: 50px;
@@ -183,3 +278,92 @@
     /* border-radius: 500px 0 0 500px; */
   }
 }
+=======
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: gray;
+    z-index: 1;
+    left: 8px;
+}
+
+.dateRight {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    left: -75px;
+} 
+
+.contentRight {
+    padding: 30px 30px 30px 90px;
+    background: #e2ebf7;
+    position: relative;
+    /* border-radius: 500px 0 0 500px; */
+}
+
+.aboutTitle {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+}
+
+.aboutDiscription {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 90px;
+    }
+    
+    .containerLeft {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+    
+    .containerRight {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+        left: 0%;
+    }
+    .containerLeft::after,
+    .containerRight::after{
+        left: 82px;
+    }
+    
+    .containerLeft::before,
+    .containerRight::before {
+        left: 100px;
+        border-color: transparent gray transparent transparent;
+    }
+    
+    .dateLeft,
+    .dateRight
+    {
+        right: auto;
+        left: 15px;
+    }
+    
+    .contentLeft,
+    .contentRight {
+        padding: 30px 30px 30px 40px;
+        /* border-radius: 500px 0 0 500px; */
+    }
+} 
+>>>>>>> Stashed changes
