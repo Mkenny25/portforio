@@ -7,14 +7,7 @@ const Works = () => {
             <h1>Works</h1>
 
         </div>
-<<<<<<< Updated upstream
     </>
     );
 };  
 export default Works;
-=======
-    );
-};
-
-export default Works;
->>>>>>> Stashed changes

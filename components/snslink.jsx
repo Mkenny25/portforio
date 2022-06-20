@@ -4,8 +4,6 @@ import {
   SiTwitter 
 } from 'react-icons/si';
 
-import styles from '../styles/snslink.module.css'
-
 const Snslink = () => {
   return (
     <>
