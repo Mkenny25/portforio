@@ -4,9 +4,8 @@
     max-width: 1140px;
     margin: 4rem 0;
     padding: 10px 0;
-  }
-  
-  .timeline::after {
+}
+.timeline::after {
     content: '';
     position: absolute;
     width: 2px;
@@ -15,18 +14,18 @@
     bottom: 0;
     left: 50%;
     margin-left: -1px;
-  }
-  
-  /* タイムライン左側表示コンテンツ */
-  .containerLeft {
+}
+
+/* タイムライン左側表示コンテンツ */
+.containerLeft {
     padding: 15px 30px;
     position: relative;
     background: inherit;
     width: 50%;
     left: 0;
-  }
-  
-  .containerLeft::after {
+}
+
+.containerLeft::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -37,9 +36,9 @@
     border: 2px solid gray;
     border-radius: 16px;
     z-index: 1;
-  }
-  
-  .containerLeft::before {
+}
+
+.containerLeft::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -48,9 +47,9 @@
     right: 8px;
     background: gray;
     z-index: 1;
-  }
-  
-  .dateLeft {
+}
+
+.dateLeft {
     position: absolute;
     display: inline-block;
     top: calc(50% - 8px);
@@ -61,26 +60,36 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
-    right: -75px;
-  } 
-  
-  .contentLeft {
+    right: -95px;
+} 
+
+.contentLeft {
     padding: 30px 90px 30px 30px;
     background: #e2ebf7;
     position: relative;
     /* border-radius: 0 500px 500px 0; */
-  }
-  
-  /* タイムライン右側表示コンテンツ */
-  .containerRight {
+}
+
+.iconLeft {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 19px);
+    border-radius: 40px;
+    text-align: center;
+    z-index: 1;
+    right: 56px;
+}
+
+/* タイムライン右側表示コンテンツ */
+.containerRight {
     padding: 15px 30px;
     position: relative;
     background: inherit;
     width: 50%;
     left: 50%;
-  }
-  
-  .containerRight::after {
+}
+
+.containerRight::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -92,10 +101,10 @@
     border-radius: 16px;
     z-index: 1;
     left: -10px;
-  }
-  
-  
-  .containerRight::before {
+}
+
+
+.containerRight::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -105,9 +114,9 @@
     background: gray;
     z-index: 1;
     left: 8px;
-  }
-  
-  .dateRight {
+}
+
+.dateRight {
     position: absolute;
     display: inline-block;
     top: calc(50% - 8px);
@@ -118,68 +127,90 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
-    left: -75px;
-  } 
-  
-  .contentRight {
+    left: -95px;
+} 
+
+.contentRight {
     padding: 30px 30px 30px 90px;
     background: #e2ebf7;
     position: relative;
     /* border-radius: 500px 0 0 500px; */
-  }
-  
-  .aboutTitle {
+}
+
+.aboutTitle {
     margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: normal;
     color: gray;
-  }
-  
-  .aboutDiscription {
+}
+
+.aboutDiscription {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
-  }
-  
-  @media (max-width: 767.98px) {
+}
+
+.iconRight {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 19px);
+    border-radius: 40px;
+    text-align: center;
+    z-index: 1;
+    left: 56px;
+}
+
+@media (max-width: 767.98px) {
+    .timeline {
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+        margin: 10px, 0;
+        padding: 0;
+    }
     .timeline::after {
-      left: 90px;
+        left: 90px;
     }
-  
+    
     .containerLeft {
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 30px;
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
     }
-  
+    
     .containerRight {
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 30px;
-      left: 0%;
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+        left: 0%;
     }
     .containerLeft::after,
     .containerRight::after{
-      left: 82px;
+        left: 82px;
     }
-  
+    
     .containerLeft::before,
     .containerRight::before {
-      left: 100px;
-      border-color: transparent gray transparent transparent;
+        left: 100px;
+        border-color: transparent gray transparent transparent;
     }
-  
+    
     .dateLeft,
     .dateRight
     {
-      right: auto;
-      left: 15px;
+        right: auto;
+        left: 15px;
     }
-  
+    
     .contentLeft,
     .contentRight {
-      padding: 30px 30px 30px 40px;
-      /* border-radius: 500px 0 0 500px; */
+        padding: 30px 30px 30px 40px;
+        /* border-radius: 500px 0 0 500px; */
     }
-  } 
+
+    .iconLeft,
+    .iconRight {
+        display: none;
+    }
+}   

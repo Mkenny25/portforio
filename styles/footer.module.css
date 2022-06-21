@@ -12,9 +12,25 @@
     color: gray;
     border-top: solid 1px;
     border-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+    z-index: 2; 
 }
 
 .footer:hover {
     --tw-text-opacity: 1;
     color: rgba(156, 163, 175, var(--tw-text-opacity));	
 }
+
+@media (max-width: 767.98px) {
+    .footer {
+        position: relative;
+        bottom: 0; 
+        left: 0;
+        display: flex;
+        margin-top: auto;
+        justify-content: center;
+        width: 100%;
+        background: white;
+        color: gray;
+        text-align: center;
+    }
+}   

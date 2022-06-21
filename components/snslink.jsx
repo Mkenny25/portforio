@@ -7,7 +7,7 @@ import {
 const Snslink = () => {
   return (
     <>
-    <div>
+    <div className={styles.skillWrapper} >
       <a href="https://example.com/" target="_blank" rel="noopener noreferrer" className={styles.skillItem} >
         <SiGithub size={30} color={'#181717'} />
       </a>

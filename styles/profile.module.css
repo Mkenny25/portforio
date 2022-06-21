@@ -1,19 +1,17 @@
 .profile {
-    padding-top: 7rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     font-size: 1.2rem;
 }
-
 
 .leftSection {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-color: white; */
+    margin-right: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightSection {
@@ -21,7 +19,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    /* background-color: blue; */
 }
 
 .name {
@@ -43,18 +40,31 @@
 
 
 @media (max-width: 900px) {
-    .items {
+    .profile {
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+    .name {
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .leftSection {
+        margin-right: 0;
+    }
+    .rightSection {
         max-width: 16rem;
     }
+    .items{
+        margin-bottom: 30px;
+    }
+    
 }
 
 @media (max-width: 600px) {
-    .profile {
-        flex-direction: column;
-    }
     
-    .items {
+    .rightSection {
         align-items: center;
         max-width: 25rem;
     }
 }
+

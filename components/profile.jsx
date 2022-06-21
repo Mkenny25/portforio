@@ -34,8 +34,8 @@ export default function Profile() {
                     <li>趣味：野球・筋トレ・絵を描く</li>
                     <br />
                     <li>個人学習の成果物を残していけたらと思います！</li>
-                    <Snslink />
                 </ul>
+                <Snslink />
             </div>
         </div>
     );
