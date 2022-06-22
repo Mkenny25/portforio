@@ -13,7 +13,7 @@ export default function blog({ posts }) {
         <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>
           {posts.map((post) => {
-            const date = new Date(post.last_edited_time).toLocaleString(
+            const date = new Date(post.created_time).toLocaleString(
               "en-US",
               {
                 month: "short",
