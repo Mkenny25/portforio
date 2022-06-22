@@ -38,11 +38,11 @@
 }
 
 
-
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .profile {
         flex-direction: column;
         padding-top: 4rem;
+        align-items: center;
     }
     .name {
         font-size: 2rem;
@@ -52,19 +52,12 @@
         margin-right: 0;
     }
     .rightSection {
-        max-width: 16rem;
+        align-items: center;
+        max-width: 25rem;
     }
     .items{
         margin-bottom: 30px;
     }
-    
-}
 
-@media (max-width: 600px) {
-    
-    .rightSection {
-        align-items: center;
-        max-width: 25rem;
-    }
 }
 

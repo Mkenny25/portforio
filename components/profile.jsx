@@ -1,6 +1,6 @@
 import styles from "../styles/profile.module.css";
 import Image from "next/image";
-import Snslink from "./snslink";
+import Skills from "./skills";
 import profilePic from '../public/images/portfolioimg.png'
 
 
@@ -35,7 +35,7 @@ export default function Profile() {
                     <br />
                     <li>個人学習の成果物を残していけたらと思います！</li>
                 </ul>
-                <Snslink />
+                <Skills />
             </div>
         </div>
     );

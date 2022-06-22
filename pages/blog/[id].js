@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 import { getDatabase, getPage, getBlocks } from "../../lib/notion";
 import Link from "next/link";
-import { databaseId } from "./blog.jsx";
+import { databaseId } from "./index.js";
 import styles from "../../styles/post.module.css";
 
 export const Text = ({ text }) => {
@@ -183,7 +183,7 @@ export default function Post({ page, blocks }) {
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
-          <Link href="/blog/blog">
+          <Link href="/blog/">
             <a className={styles.back}>← Go back</a>
           </Link>
         </section>
