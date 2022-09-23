@@ -8,7 +8,6 @@ import {
 const History = () => {
     return (
         <>
-     
             <div className={styles.timeline}>
                 <div className={styles.containerLeft}>
                     <div className={styles.dateLeft}>2021/11~</div>

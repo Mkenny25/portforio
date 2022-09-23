@@ -1,10 +1,7 @@
 import styles from "../styles/skills.module.css";
 import {
-  SiHtml5,
-  SiCss3,
   SiJava,
   SiReact,
-  SiJavascript,
   SiGatsby
 } from 'react-icons/si';
 

@@ -1,0 +1,39 @@
+.header {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: var(--boxBg);
+    border-radius: 8px;
+}
+
+
+.title {
+    display: block;
+    margin-bottom: 7px;
+    padding-top: 15px;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.author {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+.genre {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #407069;
+    border-radius: 3px;
+}
+
+.checkbox {
+    margin: 0;
+}
+
+

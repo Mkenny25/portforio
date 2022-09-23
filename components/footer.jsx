@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <Link href="/">
-                <a className={styles.footer}>Ken Portfolio ©︎2022</a>
+                <a className={styles.footer}>Ken Portfolio by Next.js ©︎2022</a>
             </Link>
         </>
     );
