@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { getBookDatabase, getBookPage, getBookBlocks } from "../../lib/notion";
 import Link from "next/link";
 import { databasebookId } from "./index.js";
-import styles from "../../styles/post.module.css";
 
 export const Text = ({ text }) => {
   if (!text) {
@@ -162,6 +161,31 @@ const renderBlock = (block) => {
       })`;
   }
 };
+
+export default function Post({ page, blocks }) {
+  if (!page || !blocks) {
+    return <div />;
+  }
+  return (
+    <div>
+      <Head>
+        <title>{page.properties.Name.title[0].plain_text}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <article className={styles.container}>
+        <h1 className={styles.name}>
+          <Text text={page.properties.Name.title} />
+        </h1>
+        <section>
+          {blocks.map((block) => (
+            <Fragment key={block.id}>{renderBlock(block)}</Fragment>
+          ))}
+        </section>
+      </article>
+    </div>
+  );
+}
 
 export const getStaticPaths = async () => {
   const database = await getBookDatabase(databasebookId);
