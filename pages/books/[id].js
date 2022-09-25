@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { getBookDatabase, getBookPage, getBookBlocks } from "../../lib/notion";
 import Link from "next/link";
-import { databaseId } from "./index.js";
+import { databasebookId } from "./index.js";
 import styles from "../../styles/post.module.css";
 
 export const Text = ({ text }) => {
@@ -164,7 +164,7 @@ const renderBlock = (block) => {
 };
 
 export const getStaticPaths = async () => {
-  const database = await getBookDatabase(databaseId);
+  const database = await getBookDatabase(databasebookId);
   return {
     paths: database.map((page) => ({ params: { id: page.id } })),
     fallback: true,
