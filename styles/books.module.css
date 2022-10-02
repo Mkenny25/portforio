@@ -1,39 +1,50 @@
-.header {
-    margin-bottom: 40px;
-    padding: 30px;
-    background-color: var(--boxBg);
-    border-radius: 8px;
-}
-
-
-.title {
-    display: block;
-    margin-bottom: 7px;
-    padding-top: 15px;
-    font-weight: 800;
-    font-size: 32px;
-}
-
-.author {
+.container {
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  
+  .heading {
     margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 17px;
+    padding: 20px;
+    border-bottom: 1px solid #dedede;
+    text-transform: uppercase;
+    font-size: 15px;
     opacity: 0.6;
-}
-
-.genre {
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 2px 5px;
-    color: white;
-    font-weight: 500;
-    font-size: 13px;
-    background-color: #407069;
-    border-radius: 3px;
-}
-
-.checkbox {
+    letter-spacing: 0.5px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .heading {
+      border-color: #343539;
+    }
+  }
+  
+  .books {
+    list-style: none;
     margin: 0;
-}
-
-
+    padding: 0;
+    
+  }
+  
+  .book {
+    padding-bottom: 50px;
+  }
+  
+  .bookTitle {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .bookTitle a {
+    color: inherit;
+  }
+  
+  .bookImage {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  

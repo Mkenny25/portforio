@@ -1,36 +1,33 @@
 import { getBookDatabase } from "../../lib/notion";
 import styles from "../../styles/books.module.css";
 import { Text } from "./[id].js";
+import Link from "next/link";
 import Image from "next/image";
 
 export const databasebookId = process.env.NOTION_DATABASE_BOOK_ID;
-
-const booksImage = 'http://books.google.com/books/content?id=GQ5WswEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73gTmAyg9rwnNrKdwLlyEFLf95v1nIE9eFKqRWQt5-z908cCGXKN5XQx_9bUPEWG3szNgcb45NuZAc16L0M3eJbSlD6DxO74itXW_rx4tx4RA7je2zK1J31Q3tTofvj5d971poQ&source=gbs_api';
-
 
 export default function books({ posts }) {
   return (
     <div>
       <main className={styles.container}>
         <h2 className={styles.heading}>My books</h2>
-        <ol className={styles.posts}>
+        <ol className={styles.books}>
           {posts.map((post) => {
             return (
-              <li key={post.id} className={styles.post}>
-                <h3 className={styles.postTitle}>
-                  <p>
-                    <Text text={post.properties.Title.title} />
-                  </p>
+              <li key={post.id} className={styles.book}>
+                <h3 className={styles.bookTitle}>
                   <Image 
-                    className="bookImage"
-                    src={booksImage} 
+                    className={styles.bookImage}
+                    src={post.cover.external.url}
                     alt="bookImage" 
-                    width={200} 
-                    height={200} 
+                    width={120} 
+                    height={150} 
                   />
-                  <p>
-                    <Text text={post.properties.Description.rich_text} />
-                  </p>
+                  <Link href={`/books/${post.id}`}>
+                    <a>
+                      <Text text={post.properties.Title.title} />
+                    </a>
+                  </Link>
                 </h3>
               </li>
             );

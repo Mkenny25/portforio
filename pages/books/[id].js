@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { getBookDatabase, getBookPage, getBookBlocks } from "../../lib/notion";
-import Link from "next/link";
 import { databasebookId } from "./index.js";
+import styles from "../../styles/post.module.css";
 
 export const Text = ({ text }) => {
   if (!text) {
@@ -168,15 +168,13 @@ export default function Post({ page, blocks }) {
   }
   return (
     <div>
-      <Head>
-        <title>{page.properties.Name.title[0].plain_text}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <article className={styles.container}>
         <h1 className={styles.name}>
-          <Text text={page.properties.Name.title} />
+          <Text text={page.properties.Title.title} />
         </h1>
+        <p>
+          <Text text={page.properties.Description.rich_text} />
+        </p>
         <section>
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
