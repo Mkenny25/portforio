@@ -14,22 +14,22 @@ export default function books({ posts }) {
         <ol className={styles.books}>
           {posts.map((post) => {
             return (
-              <li key={post.id} className={styles.book}>
-                <h3 className={styles.bookTitle}>
-                  <Image 
-                    className={styles.bookImage}
-                    src={post.cover.external.url}
-                    alt="bookImage" 
-                    width={120} 
-                    height={150} 
-                  />
-                  <Link href={`/books/${post.id}`}>
+              <Link href={`/books/${post.id}`}>
+                  <li key={post.id} className={styles.book}>
                     <a>
-                      <Text text={post.properties.Title.title} />
+                      <Image 
+                        className={styles.bookImg}
+                        src={post.cover.external.url}
+                        alt="bookImg" 
+                        width={180} 
+                        height={225} 
+                      />
+                      <h3 className={styles.bookTitle}>
+                        <Text text={post.properties.Title.title} />
+                      </h3>
                     </a>
-                  </Link>
-                </h3>
-              </li>
+                  </li>
+              </Link>
             );
           })}
         </ol>
