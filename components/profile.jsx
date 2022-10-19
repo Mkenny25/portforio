@@ -1,12 +1,15 @@
 import styles from "../styles/profile.module.css";
 import Image from "next/image";
 import Skills from "./skills";
+import History from '../components/history'
 import profilePic from '../public/images/portfolioimg.png'
 
 
-export default function Profile() {
+// export default function Profile() {
+    const Profile = () => {
     return (
-        <div className={styles.profile}>
+        <>
+                <div className={styles.profile}>
             <div className={styles.leftSection}>
                 <div>
                     <>
@@ -38,5 +41,11 @@ export default function Profile() {
                 <Skills />
             </div>
         </div>
+        <div>
+             <History />
+        </div>
+        </>
     );
 };
+
+export default Profile;
