@@ -14,12 +14,6 @@
     opacity: 0.6;
     letter-spacing: 0.5px;
 }
-  
-@media (prefers-color-scheme: dark) {
-    .heading {
-      border-color: #343539;
-    }
-}
 
 .books {
     list-style: none;
@@ -41,6 +35,12 @@
     cursor:pointer
 }
 
+.imgWrapper{
+    width: 180px;
+    height: 225px;
+    position: relative !important;
+}
+
   
 .bookTitle {
     width : 200px;    
@@ -52,5 +52,36 @@
 .bookImg {
     margin-top: 0;
     margin-bottom: 12px;
-    border-radius: 3%;
+    border-radius: 15%;
 }  
+
+/* 携帯表示 */
+@media (max-width: 767.98px) {
+
+    .books {
+        flex-wrap: wrap;
+    }
+
+    .book {
+        width:100%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .imgWrapper{
+        width: 200px;
+        position: relative !important;
+    }
+
+    .bookTitle {
+        width : 200px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .bookImg {
+        border-radius: 15%;
+    }  
+}   

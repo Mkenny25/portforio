@@ -17,13 +17,17 @@ export default function books({ posts }) {
               <Link href={`/books/${post.id}`}>
                   <li key={post.id} className={styles.book}>
                     <a>
-                      <Image 
-                        className={styles.bookImg}
-                        src={post.cover.external.url}
-                        alt="bookImg" 
-                        width={180} 
-                        height={225} 
-                      />
+                      <div className={styles.imgWrapper}>
+                        <Image 
+                          className={styles.bookImg}
+                          src={post.cover.external.url}
+                          alt="bookImg" 
+                          layout="fill" 
+                          objectFit="contain" 
+                          // width={180} 
+                          // height={225} 
+                        />
+                      </div>
                       <h3 className={styles.bookTitle}>
                         <Text text={post.properties.Title.title} />
                       </h3>
