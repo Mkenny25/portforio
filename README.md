@@ -6,7 +6,7 @@ React(Nextに移行)の自己学習のためのポートフォリオ作成
  
 # Features
  
-Notion APIを利用して、blog記事と読んでいる書籍を間に見えるようにした。
+Notion APIを利用して、blog記事と読んでいる書籍を目に見えるようにした。
  
 # Requirement
  
