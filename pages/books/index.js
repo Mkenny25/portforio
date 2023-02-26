@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export const databasebookId = process.env.NOTION_DATABASE_BOOK_ID;
 
+
 export default function books({ posts }) {
   return (
     <div>

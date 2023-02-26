@@ -173,9 +173,6 @@ export default function Post({ page, blocks }) {
         <h1 className={styles.name}>
           <Text text={page.properties.Title.title} />
         </h1>
-        <p>
-          aaa
-        </p>
         <h3 className={styles.description}>
           ＜概要＞
         </h3>        

@@ -9,7 +9,7 @@ import profilePic from '../public/images/portfolioimg.png'
     const Profile = () => {
     return (
         <>
-                <div className={styles.profile}>
+        <div className={styles.profile}>
             <div className={styles.leftSection}>
                 <div>
                     <>
@@ -42,9 +42,9 @@ import profilePic from '../public/images/portfolioimg.png'
             </div>
         </div>
         <div>
-             <History />
+            <History />
         </div>
-        </>
+    </>
     );
 };
 
